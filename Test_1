@@ -1,0 +1,61 @@
+#include <iostream>
+#include <cstdlib>
+#include <cstdio>
+#include <ctime>
+
+using namespace std;
+
+void wyswietl(int tab[20])
+{
+cout<<"Elementy znajdujace sie w tablicy"<<endl;
+for(int i=0;i<20;i++)
+cout<<tab[i]<<"";
+}
+void wypelnij(int tab[20])
+{
+cout<<"Wylosowane liczby z przedzialu <0,10> ";
+for(int i=0;i<20;i++)
+tab[i]=rand()%11;
+}
+void zliczanie(int tab[20])
+{
+int wynik[11]=0;
+for(int i=20;i>=0;i++)
+wynik[tab[i]]++;
+
+
+
+int licznik=0;
+int najwieksza=0;
+{
+for(int i=20;i>=0;i--)
+{
+for(int k=0;k<11;k++)
+{
+if(wynik[k]==i)
+{
+cout<<"Najwieksza liczba to"<<k<<"wystapila"<<i<<"razy"<<endl;
+najwieksza=1;
+licznik++;
+}
+}
+if(najwieksza==1)
+{
+if(licznik>1)
+cout<<licznik<<"liczby maja maksymalna wartosc"<<endl;
+else
+cout<<"1 liczba ma maksymalna wartosc"<<endl;
+
+break;
+}
+}
+
+int main()
+{
+int tablica[20];
+srand(time(NULL));
+wypelnij(tab);
+wyswietl(tab);
+zliczanie(tab);
+return 0;
+}

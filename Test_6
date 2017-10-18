@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+using namespace std;
+
+void wypelnij(int tab[100][100],int w,int k)
+{
+srand(time(NULL));
+for(int i=0;i<w;i++)
+{
+for(int j=0;j<k;j++)
+{
+tab[i][j]=rand()%10;
+}
+}
+}
+int main()
+{
+int w;
+int k;
+cin>>w>>k;
+int tab[100][100];
+wypelnij(tab,w,k);
+for(int i=0;i<w;i++)
+{
+for(int j=0;j<k;j++)
+{
+cout<<tab[i][j]<<"";
+}
+cout<<endl;
+}
+int wartosc;
+cin>>wartosc;
+for(int i=0;i<k;i++)
+{
+int ile=0;
+for(int j=0;j<w;j++)
+{
+if(tab[i][j]>wartosc)
+{
+ile++;
+}
+}
+cout<<"Ilosc liczb wiekszych niz"<<wartosc<<"w"<<i+1<<"kolumnie jest rowna"<<ile<<endl;
+}
+return 0;
+}
+
+

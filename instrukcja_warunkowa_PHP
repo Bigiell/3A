@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Instrukcja warunkowa</title>
+</head>
+<body>
+<?php
+
+   $a = 2;
+   $b = 5;
+   $c = 1;
+
+   if($a > $b)
+      echo "$a jest większe od $b";
+   elseif ($b > $c)
+      echo "$b jest większe od $c";
+   else
+      echo "$c jest większe od $a i $b";
+
+   if($a)
+      echo "Zmienna $a ma wartość większą od zera";
+
+?>
+</body>
+</html>

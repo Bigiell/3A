@@ -1,0 +1,3 @@
+Zamiana liczby z DEC na BIN lub z BIN na DEC (rekurencyjna)
+Rekurencyjne odwracanie wprowadzonego ciagu
+

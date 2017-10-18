@@ -1,0 +1,109 @@
+div.kolorki {
+  width: 100%;
+  height: 50px;
+}
+
+.monochromatyczny1 {
+  background: #7F0901;
+}
+
+.monochromatyczny2 {
+  background: #FF4B3F;
+}
+
+.monochromatyczny3 {
+  background: #FF1209;
+}
+
+.monochromatyczny4 {
+  background: #7F3D36;
+}
+
+.monochromatyczny5 {
+  background: #CC0F07;
+}
+
+.dopelniajacy1 {
+  background: #B20405;
+}
+
+.dopelniajacy2 {
+  background: #FF302C;
+}
+
+.dopelniajacy3 {
+  background: #FF0609;
+}
+
+.dopelniajacy4 {
+  background: #00B23C;
+}
+
+.dopelniajacy5 {
+  background: #00FF59;
+}
+
+.sasiadujace1 {
+  background: #FF590F;
+}
+
+.sasiadujace2 {
+  background: #E8310B;
+}
+
+.sasiadujace3 {
+  background: #FF0604;
+}
+
+.sasiadujace4 {
+  background: #E80C61;
+}
+
+.sasiadujace5 {
+  background: #FF0DEE;
+}
+
+.trojkatne1 {
+  background: #B21519;
+}
+
+.trojkatne2 {
+  background: #FEFF11;
+}
+
+.trojkatne3 {
+  background: #FF0607;
+}
+
+.trojkatne4 {
+  background: #147ECD;
+}
+
+.trojkatne5 {
+  background: #096AB9;
+}
+
+div.link a {
+  color: #AABBCC;
+}
+
+div.link a:visited {
+  color: #AA64AA;
+}
+
+div.link a:active {
+  color: #128128;
+}
+
+div.kolor {
+  width: 100%;
+}
+
+div.kolor div {
+  width: 30px;
+  height: 30px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 5px;
+  background: black;
+}
